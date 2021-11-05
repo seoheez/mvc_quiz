@@ -21,7 +21,10 @@
 		<c:when test="${list.size() != 0 }">
 			<c:forEach var="mem" items="${list }">
 				<tr>
-					<td>${mem.id }</td> <td>${mem.pwd }</td> <td>${mem.name }</td>
+					<td>${mem.id }</td> <td>${mem.pwd }</td>
+					<td>
+					<a href="${contextPath }/member/memberInfo?id=${mem.id }">${mem.name }</a> 
+					</td>
 				</tr>
 			</c:forEach>
 		</c:when>
